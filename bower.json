@@ -1,0 +1,21 @@
+{
+  "name": "social-star-wars",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.4.2",
+    "angular-animate": "~1.4.2",
+    "angular-aria": "~1.4.2",
+    "angular-resource": "~1.4.2",
+    "angular-sanitize": "~1.4.2",
+    "angular-ui-router": "~0.2.15",
+    "angular-material":  "~1.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.2"
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.2"
+  }
+}

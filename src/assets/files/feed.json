@@ -1,0 +1,123 @@
+[
+    {
+        "type":"invitation",
+        "message":"invited you to the dark force.",
+        "event":{
+            "name":"Join to the dark side of the force",
+            "location":"Death Star",
+            "image":"http://megaicons.net/static/img/icons_sizes/532/2013/32/death-star-2-icon.png",
+            "guests":[
+                {
+                    "friend":{
+                        "_id": "566c96d0a0876b3a2ac2464a",
+                        "name": "Darth Vader"
+                    }
+                }
+            ]
+        },
+        "friend":{
+            "_id": "566c96d0cf809a500a7789e2",
+            "name": "Darth Sidious"
+        }
+    },
+    {
+        "type":"status",
+        "message":"Grrrwaaaaaarggggh ",
+        "friend":{
+            "_id": "566c96d068f880e812acd995",
+            "name": "Chewbacca"
+        }
+    },
+    {
+        "type":"confirm",
+        "message":"said that he is your father. Do you want to add this to your profile ?",
+        "friend":{
+            "_id": "566c96d0a0876b3a2ac2464a",
+            "name": "Darth Vader"
+        }
+    },
+    {
+        "type":"photo",
+        "message":"Holiday in Asgard !  :) #MeetingTheWholeGalaxy",
+        "image":"http://www.simmworksfamily.com/wp-content/uploads/2013/11/Thor-The-Dark-World-Asgard-Chris-Hemsworth-Natalie-Portman-resized.jpg",
+        "friend":{
+            "_id": "566c96d0b34a92f0d80726f1",
+            "name": "Padmé Amidala"
+        },
+        "replies":[
+            {
+                "message":"Beautiful this place is.",
+                "friend":{
+                    "_id": "566c96d05ef3020dad9de738",
+                    "name": "Yoda"
+                }
+            },
+            {
+                "message":"You are very beautiful milady.",
+                "friend":{
+                    "_id": "566c96d050029b942aa10552",
+                    "name": "C-3PO"
+                }
+            },
+            {
+                "message":"Thanks 3PO s2",
+                "friend":{
+                    "_id": "566c96d0b34a92f0d80726f1",
+                    "name": "Padmé Amidala"
+                }
+            },
+            {
+                "message":"You are welcome milady.",
+                "friend":{
+                    "_id": "566c96d050029b942aa10552",
+                    "name": "C-3PO"
+                }
+            },
+            {
+                "message":"Who's this guy ?",
+                "friend":{
+                    "_id": "566c96d0a0876b3a2ac2464a",
+                    "name": "Darth Vader"
+                }
+            },
+            {
+                "message":"Someone who does not hang me",
+                "friend":{
+                    "_id": "566c96d0b34a92f0d80726f1",
+                    "name": "Padmé Amidala"
+                }
+            },
+            {
+                "message":"Woooooooooooooooow",
+                "friend":{
+                    "_id": "566c96d01c50fbf51f8f80f3",
+                    "name": "R2-D2"
+                }
+            },
+            {
+                "message":"You have lost this woman my young apprentice",
+                "friend":{
+                    "_id": "566c96d0cf809a500a7789e2",
+                    "name": "Darth Sidious"
+                }
+            },
+            {
+                "message":"Nooooooooooooooooooo",
+                "friend":{
+                    "_id": "566c96d0a0876b3a2ac2464a",
+                    "name": "Darth Vader"
+                }
+            }
+        ]
+    },
+    {
+        "type":"photo",
+        "message":"#nofilter #nakedface",
+        "image":"http://2.bp.blogspot.com/-31X73HqZfx0/UghKdxU4PyI/AAAAAAAA0pE/f3WWOHQLrqM/s1600/Ray_Park.jpg",
+        "friend":{
+            "_id": "566c96d0e68ea8131b196e67",
+            "name": "Darth Maul"
+        }
+    }
+
+]

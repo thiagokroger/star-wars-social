@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "566c96d068f880e812acd995",
+        "name": "Chewbacca",
+        "birth": "200 BBY",
+        "mid": 7200,
+        "gender": "Male",
+        "species": "Wookie",
+        "profession": "Co-pilot"
+    },
+    {
+        "_id": "566c96d0e68ea8131b196e67",
+        "name": "Darth Maul",
+        "birth": "60 BBY",
+        "mid": 12000,
+        "gender": "Male",
+        "species": "Dathomirian",
+        "profession": "Sith Lord"
+    },
+    {
+        "_id": "566c96d0a0876b3a2ac2464a",
+        "name": "Darth Vader",
+        "birth": "42 BBY",
+        "mid": 27000,
+        "gender": "Male",
+        "species": "Human",
+        "profession": "Lord Sith"
+    },
+    {
+        "_id": "566c96d0b34a92f0d80726f1",
+        "name": "Padmé Amidala",
+        "birth": "14 BIN",
+        "mid": 5000,
+        "gender": "Female",
+        "species": "Human",
+        "profession": "Senator of Naboo"
+    },
+    {
+        "_id": "566c96d01c50fbf51f8f80f3",
+        "name": "R2-D2",
+        "birth": "33 BBY",
+        "mid": 0,
+        "gender": "n/a",
+        "species": "Robot",
+        "profession": "Astromech Droid"
+    },
+    {
+        "_id": "566c96d0cf809a500a7789e2",
+        "name": "Darth Sidious",
+        "birth": "65 BGE",
+        "mid": 20000,
+        "gender": "Male",
+        "species": "Human",
+        "profession": "Lord of the Sith"
+    },
+    {
+        "_id": "566c96d05ef3020dad9de738",
+        "name": "Yoda",
+        "birth": "900 BBE",
+        "mid": 19000,
+        "gender": "Male",
+        "species": "Unknown",
+        "profession": "Jedi Master"
+    },
+    {
+        "_id": "566c96d02f8c27a8f1601307",
+        "name": "BB-8",
+        "birth": "Unknown",
+        "mid": 0,
+        "gender": "n/a",
+        "species": "Robot",
+        "profession": "Astromech Droid"
+    },
+    {
+        "_id": "566c96d07c273510d5e1802f",
+        "name": "Boba Fett",
+        "birth": "30 BBY",
+        "mid": 2500,
+        "gender": "Male",
+        "species": "Human",
+        "profession": "Bounty Hunter"
+    },
+    {
+        "_id": "566c96d050029b942aa10552",
+        "name": "C-3PO",
+        "birth": "35 BBY",
+        "mid": 0,
+        "gender": "n/a",
+        "species": "Robot",
+        "profession": "Protocol Droid"
+    }
+]

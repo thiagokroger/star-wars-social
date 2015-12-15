@@ -1,0 +1,48 @@
+<div flex  layout="column" class="sw-feed">
+    <div ng-if="feed.type=='status'" flex layout="column"  layout-padding  class="md-whiteframe-z2">
+        <div flex class="title">{{feed.friend.name}} changed status to :</div>
+        <div flex>{{feed.message}}</div>
+    </div>
+    <div ng-if="feed.type=='confirm'" flex layout="column"  layout-padding  class="md-whiteframe-z2">
+        <div flex class="title">{{feed.friend.name}} {{feed.message}}</div>
+        <div flex layout="row" layout-align="end">
+            <md-button class="md-button md-accent md-raised">Nooooooooo</md-button>
+            <md-button class="md-button md-primary md-raised">Yes</md-button>
+        </div>
+    </div>
+    <div ng-if="feed.type=='photo'" flex layout="row" layout-wrap layout-padding  class="md-whiteframe-z2">
+        <div fill class="title">{{feed.friend.name}} added a new picture</div>
+        <div fill>{{feed.message}}</div>
+        <div fill><img ng-src="{{feed.image}}"></div>
+        <div fill>
+            <div class="reply" fill ng-repeat="reply in feed.replies" layout="row">
+                <div class="reply-photo" >
+                    <img ng-src="/assets/images/avatars/{{reply.friend._id}}.png">
+                </div>
+                <div flex layout="row" layout-align="start center">
+                    {{reply.message}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div ng-if="feed.type=='invitation'" flex layout="row" layout-wrap  layout-padding  class="md-whiteframe-z2">
+        <div fill class="title">{{feed.friend.name}} invited you to an event at <strong>{{feed.event.location}}</strong>:</div>
+        <div fill class="event-name" layout="row" layout-padding>
+            <div>
+                <img ng-src="{{feed.event.image}}" />
+            </div>
+            <div layout="row" layout-align="start center">
+                <strong>{{feed.event.name}}</strong>
+            </div>
+        </div>
+        <div fill>{{feed.event.guests.length}} of your friends is/are going</div>
+        <div fill ng-repeat="guest in feed.event.guests">
+            - {{guest.friend.name}}
+        </div>
+        <div fill layout="row" layout-align="end">
+            <md-button class="md-button md-accent md-raised">No</md-button>
+            <md-button class="md-button md-primary md-raised">Yes</md-button>
+        </div>
+    </div>
+</div>

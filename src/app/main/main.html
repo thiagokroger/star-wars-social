@@ -1,0 +1,73 @@
+<md-tabs class="bg-grey-200" flex md-stretch-tabs="always" md-dynamic-height="true">
+
+    <md-tab md-on-select="main.showFeed()">
+        <md-tab-label>Feed</md-tab-label>
+        <md-tab-body>
+            <sw-loading ng-if="!main.feedError && !main.feed"></sw-loading>
+            <sw-error ng-if="main.feedError"></sw-error>
+            <sw-card ng-if="main.feed" ng-repeat="feed in main.feed" avatar="{{feed.friend._id}}">
+                <sw-feed data="{{feed}}"></sw-feed>
+            </sw-card>
+        </md-tab-body>
+    </md-tab>
+    <md-tab md-on-select="main.showFriends()">
+        <md-tab-label id="tabFriends">Friends</md-tab-label>
+        <md-tab-body>
+            <sw-loading ng-if="!main.friendsError && !main.friends"></sw-loading>
+            <sw-error ng-if="main.friendsError"></sw-error>
+            <sw-card ng-if="main.friends" ng-repeat="friend in main.friends" avatar="{{friend._id}}">
+                <div layout="column" flex="50">
+                    <span  class="md-subhead">Name</span>
+                    <span>{{friend.name}}</span>
+                </div>
+                <div layout="column" flex="50">
+                    <span class="md-subhead">Birth Date</span>
+                    <span >{{friend.birth}}</span>
+                </div>
+                <div layout="column" flex="50">
+                    <span class="md-subhead">Species</span>
+                    <span>{{friend.species}}</span>
+                </div>
+                <div layout="column" flex="50">
+                    <span class="md-subhead">Gender</span>
+                    <span>{{friend.gender}}</span>
+                </div>
+                <div layout="column" flex="50">
+                    <span class="md-subhead">Profession</span>
+                    <span>{{friend.profession}}</span>
+                </div>
+                <div layout="column" flex="50">
+                    <span class="md-subhead">Midi-chlorians</span>
+                    <span>{{friend.mid}}</span>
+                </div>
+            </sw-card>
+
+        </md-tab-body>
+    </md-tab>
+    <md-tab md-on-select="main.showAccount()">
+        <md-tab-label>Account</md-tab-label>
+        <md-tab-body>
+            <md-card layout-padding>
+                <md-card-body layout="row" layout-wrap>
+                    <div fill layout-margin>Change your informations :</div>
+                    <div fill layout-margin>
+                        <md-input-container>
+                            <label>Name</label>
+                            <input ng-model="main.account.name">
+                        </md-input-container>
+                    </div>
+                    <div fill layout-margin>
+                        <md-input-container>
+                            <label>Species</label>
+                            <input ng-model="main.account.species">
+                        </md-input-container>
+                    </div>
+                    <div fill layout="row" layout-align="end center">
+                        <md-button class="md-button md-primary md-raised" ng-click="main.saveAccount()">Save</md-button>
+                    </div>
+                </md-card-body>
+            </md-card>
+        </md-tab-body>
+    </md-tab>
+</md-tabs>
+
